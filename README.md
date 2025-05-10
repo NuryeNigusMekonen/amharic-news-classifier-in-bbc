@@ -62,8 +62,8 @@ Overall Accuracy: `56.67%`
 
 
 
-Confusion Matrix
-
+## Confusion Matrix
+```
 
              Predicted
             ┌──────────------------------------┐
@@ -75,7 +75,7 @@ Sport       │10      0        16    0          │
 Technology  │11      1        0     9          │
             ------------------------------------
 			
-
+```
 
 
  Installation & Usage
