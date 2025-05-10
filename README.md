@@ -103,6 +103,8 @@ Replace TF-IDF with pretrained embeddings (e.g., fastText, BERT)
 
 Explore deep learning models (LSTM, transformer)
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 👤 Author
 Nurye Nigus
 Electrical & Software Engineer
