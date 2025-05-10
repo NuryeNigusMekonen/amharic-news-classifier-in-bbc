@@ -18,8 +18,9 @@ Features
 
 ---
 '''
-## Folder Structure
+## 📁 Folder Structure
 
+```
 amharic-news-classifier/
 │
 ├── data/
@@ -46,7 +47,7 @@ amharic-news-classifier/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
+```
 
 Sample Evaluation
 
