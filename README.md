@@ -22,17 +22,30 @@ Folder Structure
 
 amharic-news-classifier/
 │
-├── train_model.py # Model training, evaluation, saving
-├── visualise_using_graph.py # Graphs: class-wise metrics, accuracy, confusion matrix
-├── bbc_amharic_dataset_300+.csv # Cleaned dataset (scraped from BBC Amharic)
-├── README.md # Project description (this file)
-├── requirements.txt # Required Python libraries
-└── models/
-├── amharic_news_classifier_300+.pkl
-└── tfidf_vectorizer_300+.pkl
-
-
-
+├── data/
+│   └── bbc_amharic_dataset_300+.csv
+│
+├── models/
+│   ├── amharic_news_classifier_300+.pkl
+│   └── tfidf_vectorizer_300+.pkl
+│
+├── scripts/
+│   ├── classifier.py
+│   ├── testing_with_sample_data.py
+│   ├── import_requests_for_for_mother.py
+│   └── visualize_using_graph.py
+│
+├── figures/
+│   ├── accuracy_score_overal.png
+│   ├── confusion_matrix_amharic.png
+│   └── Figure_1.png
+│
+├── docs/
+│   └── NLP_Projects_Guide.pdf
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
 ---
 
 Sample Evaluation
@@ -74,10 +87,7 @@ cd amharic-news-classifier
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Train the model (or skip if already trained)
-python train_model.py
-
-# 4. Visualize results
+# 3. Visualize results
 python visualise_using_graph.py
 
 
