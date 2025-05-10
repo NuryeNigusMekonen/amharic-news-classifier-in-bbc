@@ -29,7 +29,7 @@ df = pd.read_csv(CSV_PATH)
 df.dropna(subset=["text", "label"], inplace=True)
 df["text"] = df["text"].apply(lambda x: re.sub(r"[፣።፤፥,!?\"']", "", str(x)).strip())
 
-# === Balance dataset ===
+# === Balance dataset === as 120 headlines and 90 headlines available for different catagories 
 min_class = df["label"].value_counts().min()
 df_balanced = pd.concat([
     df[df["label"] == label].sample(min_class, random_state=42)
@@ -38,7 +38,11 @@ df_balanced = pd.concat([
 print(f" Balanced dataset. Samples per class: {min_class}")
 
 # === TF-IDF vectorization ===
-vectorizer = TfidfVectorizer(max_features=8000, ngram_range=(1, 2), sublinear_tf=True)
+vectorizer = TfidfVectorizer(max_features=8000, ngram_range=(1, 2), sublinear_tf=True) #this transforms text to numerical value that logistic regression can understand.
+#max_features=8000
+#Limits the number of features (words/phrases) to 8000 most important ones. we can use any randome limited value here 
+#Why? To avoid very large and slow models, especially with limited data.
+#Without this, the model might try to use all possible words, which can be too many (100k+).
 X = vectorizer.fit_transform(df_balanced["text"])
 y = df_balanced["label"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)

@@ -22,7 +22,7 @@ categories = {
 headers = {"User-Agent": "Mozilla/5.0"}
 data = []
 
-page_limit = 5  # Increase this to collect more
+page_limit = 10  # Increase this to collect more
 
 # === Start scraping ===
 for label, base_url in categories.items():
