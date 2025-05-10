@@ -3,4 +3,5 @@ __pycache__/
 *.joblib
 *.DS_Store
 .env
+*.docs
 with less sample data/

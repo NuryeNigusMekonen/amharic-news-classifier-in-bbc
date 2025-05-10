@@ -32,14 +32,14 @@ amharic-news-classifier/
 │
 ├── scripts/
 │   ├── classifier.py
-│   ├── testing_with_sample_data.py
-│   ├── import_requests_for_for_mother.py
-│   └── visualize_using_graph.py
+│   ├── UI_testing_with_sample_data.py
+│   ├── import_requests_for_for moth than 300 articles.py
+│
 │
 ├── figures/
 │   ├── accuracy_score_overal.png
-│   ├── confusion_matrix_amharic.png
-│   └── Figure_1.png
+│   ├── confusion_matrix.png
+│   └── classwise_matics.png
 │
 ├── docs/
 │   └── NLP_Projects_Guide.pdf
