@@ -46,7 +46,7 @@ amharic-news-classifier/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
----
+
 
 Sample Evaluation
 
