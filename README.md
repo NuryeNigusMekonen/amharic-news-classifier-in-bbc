@@ -34,7 +34,7 @@ amharic-news-classifier/
 │   ├── classifier.py
 │   ├── testing_with_sample_data.py
 │   ├── import_requests_for_for_mother.py
-│   └── visualize_using_graph.py
+│
 │
 ├── figures/
 │   ├── accuracy_score_overal.png
