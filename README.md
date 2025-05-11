@@ -50,41 +50,30 @@ NLP/
 ##  Confusion Matrix
 
 ![Confusion Matrix](figures/confusion_matrix.png)
-```
+
 ##  Installation
-1. Clone the repository:
 ```
+1. Clone the repository:
+
 git clone https://github.com/NuryeNigusMekonen/amharic-news-classifier-in-bbc.git
 cd amharic-news-classifier-in-bbc
-````
+
 3. Install dependencies:
-```
+
 pip install -r requirements.txt
 ```
-
 ##  How to Run
-
-### Train the Classifier:
-```bash
-python classifier.py
 ```
+### Train the Classifier:
+python classifier.py
+
 ### Test on Sample Data:
-```bash
 python UI_testing_with_model.py
 ```
 
-##  Model Details
-```
-* **Vectorization**: TF-IDF
-* **Classifier**: Logistic Regression
-* **Evaluation Metrics**: Accuracy, Precision, Recall, F1-score
-
----
-``````
-
 ##  Author
 ```
-* **Nurye Nigus Mekonen**
+Nurye Nigus Mekonen
 
 Feel free to comment on my repo or contribute by opening issues or pull requests!
 
