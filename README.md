@@ -79,10 +79,12 @@ python UI_testing_with_model.py
 
 ##  Author
 ```
-Nurye Nigus Mekonen
-
-Feel free to comment on my repo or contribute by opening issues or pull requests!
-
+👤 Author
+Nurye Nigus
+Electrical & Software Engineer
+📧 nurye.nigus.me@gmail.com
+🌐 LinkedIn (https://www.linkedin.com/in/nryngs/)
+🐙 GitHub: @NuryeNigusMekonen
 ```
 ##  License
 
