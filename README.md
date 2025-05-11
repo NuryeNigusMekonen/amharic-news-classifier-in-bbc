@@ -2,7 +2,13 @@
 # Amharic News Classifier - BBC Dataset
 ```
 This project is a machine learning-based text classifier that categorizes Amharic news articles into four distinct categories: 
-**Health**, **Politics**, **Sport**, and **Technology**. The classifier is trained using an enhanced dataset sourced from BBC Amharic news, with 250 labeled articles per category.
+1, Health,
+2, Politics,
+3, Sport, and
+4, Technology.
+
+The classifier is trained using an enhanced dataset sourced from BBC Amharic news, with 250 labeled articles per categor - if we need more accurate one we can add more data by scrapping - means by adding page
+number to be scraped.
 
 project is requested by HILCOE school NLP subject.
 ```
