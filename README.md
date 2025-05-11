@@ -82,10 +82,10 @@ python UI_testing_with_model.py
 👤 Author
 Nurye Nigus
 Electrical & Software Engineer
-📧 nurye.nigus.me@gmail.com
-🌐 LinkedIn (https://www.linkedin.com/in/nryngs/)
-🐙 GitHub: @NuryeNigusMekonen
-![image](https://github.com/user-attachments/assets/1cfa395f-0ab5-46f7-b860-af59ecfb818c) : Phone : +251929404324
+📧 Email :    nurye.nigus.me@gmail.com
+🌐 LinkedIn   (https://www.linkedin.com/in/nryngs/)
+🐙 GitHub:    @NuryeNigusMekonen
+📞 Phone :    +251929404324
 
 ```
 ##  License
