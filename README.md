@@ -6,14 +6,14 @@ This project is a machine learning-based text classifier that categorizes Amhari
 
 project is requested by HILCOE school NLP subject.
 ```
-## 🚀 Features
+##  Features
 ```
 - Classifies Amharic news articles into 4 categories.
 - Enhanced with an expanded dataset for better generalization.
 - Evaluation using accuracy, precision, recall, F1-score, and confusion matrix.
 - Visual performance metrics included.
 ```
-## 📁 Project Structure
+##  Project Structure
 ```
 NLP/
 ├── data/
@@ -37,21 +37,21 @@ NLP/
 ```
 ---
 
-## 📈 Performance Results
+##  Performance Results
 
-## ✅ Overall Accuracy
+##  Overall Accuracy
 
 ![Accuracy](figures/accuracy_bar.png)
 
-## 📊 Class-wise Metrics
+##  Class-wise Metrics
 
 ![Class Metrics](figures/classwise_metrics.png)
 
-## 🧩 Confusion Matrix
+##  Confusion Matrix
 
 ![Confusion Matrix](figures/confusion_matrix.png)
 ```
-## 📦 Installation
+##  Installation
 1. Clone the repository:
 ```
 git clone https://github.com/NuryeNigusMekonen/amharic-news-classifier-in-bbc.git
@@ -62,7 +62,7 @@ cd amharic-news-classifier-in-bbc
 pip install -r requirements.txt
 ```
 
-## 🛠️ How to Run
+##  How to Run
 
 ### Train the Classifier:
 ```bash
@@ -73,22 +73,22 @@ python classifier.py
 python UI_testing_with_model.py
 ```
 
-
-## 🧠 Model Details
-
+##  Model Details
+```
 * **Vectorization**: TF-IDF
 * **Classifier**: Logistic Regression
 * **Evaluation Metrics**: Accuracy, Precision, Recall, F1-score
 
 ---
+``````
 
-## ✍️ Author
-
+##  Author
+```
 * **Nurye Nigus Mekonen**
 
 Feel free to comment on my repo or contribute by opening issues or pull requests!
 
-
+```
 ## 📄 License
 
 This project is licensed under the MIT License.
