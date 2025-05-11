@@ -78,6 +78,12 @@ python classifier.py
 2. Test on Sample Data:
 python UI_testing_with_model.py
 ```
+## output will look like below
+1. INPUT UI
+![Confusion Matrix](figures/UI_for_input.png)
+
+2. PREDICTION RESULT
+![Confusion Matrix](figures/prediction_result.png)
 ##  Author
 ```
 👤 Author
