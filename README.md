@@ -21,25 +21,29 @@ project is requested by HILCOE school NLP subject.
 ```
 ##  Project Structure
 ```
-NLP/
-├── data/
-│   └── bbc_amharic_dataset_300+.csv     ← Cleaned dataset
-├── models/
-│   ├── amharic_news_classifier_300+.pkl ← Trained Logistic Regression model
-│   └── tfidf_vectorizer_300+.pkl        ← TF-IDF vectorizer used for text features
-├── figures/
-│   ├── accuracy_bar.png                 ← Bar chart of overall accuracy
-│   ├── classwise_metrics.png            ← Precision, Recall, F1 per class
-│   └── confusion_matrix.png             ← Heatmap of classification errors
-├── scripts/
-│   ├── classifier.py                    ← Trains model and generates visual metrics
-│   ├── import_requests_for_more_than_300_articles.py ← Scrapes BBC Amharic site
-│   └── UI_testing_with_model.py         ← Predicts category using saved model
-├── docs/
-│   └── NLP_Projects_Guide.pdf           ← Project guide or instructions
-├── requirements.txt                     ← Python dependencies
-├── LICENSE                              ← License info
-└── README.md                            ← You’re here!
+
+| Folder / File Path                                        | Description                                                  |
+|-----------------------------------------------------------|--------------------------------------------------------------|
+| `NLP/`                                                    | Root project directory                                       |
+| ├── `data/`                                               | Contains dataset files                                       |
+| │   └── `bbc_amharic_dataset_300+.csv`                    | Cleaned dataset                                              |
+| ├── `models/`                                             | Saved model and vectorizer                                  |
+| │   ├── `amharic_news_classifier_300+.pkl`                | Trained Logistic Regression model                            |
+| │   └── `tfidf_vectorizer_300+.pkl`                       | TF-IDF vectorizer used for text features                     |
+| ├── `figures/`                                            | Visual results and evaluation metrics                        |
+| │   ├── `accuracy_bar.png`                                | Bar chart of overall accuracy                                |
+| │   ├── `classwise_metrics.png`                           | Precision, Recall, and F1-score per class                    |
+| │   └── `confusion_matrix.png`                            | Confusion matrix (heatmap of classification errors)          |
+| ├── `scripts/`                                            | Python scripts used for training and testing                 |
+| │   ├── `classifier.py`                                   | Trains model and generates metrics                           |
+| │   ├── `import_requests_for_more_than_300_articles.py`   | Scrapes news articles from BBC Amharic                       |
+| │   └── `UI_testing_with_model.py`                        | Tests predictions using saved model                          |
+| ├── `docs/`                                               | Documentation or resources                                   |
+| │   └── `NLP_Projects_Guide.pdf`                          | Project guide/instructions                                   |
+| ├── `requirements.txt`                                    | Python dependencies                                          |
+| ├── `LICENSE`                                             | License info                                                 |
+| └── `README.md`                                           | You’re here!                                                 |
+
 ```
 ---
 
