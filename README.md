@@ -79,11 +79,12 @@ python classifier.py
 python UI_testing_with_model.py
 ```
 ## output will look like below
-1. INPUT UI
-![Confusion Matrix](figures/UI_for_input.png)
+1. INPUT UI  
+![Confusion Matrix](figures/UI_for_input.png){:width="500px" height="300px"}
 
-2. PREDICTION RESULT
-![Confusion Matrix](figures/prediction_result.png)
+2. PREDICTION RESULT  
+![Confusion Matrix](figures/prediction_result.png){:width="500px" height="300px"}
+
 ##  Author
 ```
 👤 Author
