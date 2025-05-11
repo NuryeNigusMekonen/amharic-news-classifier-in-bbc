@@ -70,10 +70,10 @@ pip install -r requirements.txt
 ```
 ##  How to Run
 ```
-### Train the Classifier:
+1. Train the Classifier:
 python classifier.py
 
-### Test on Sample Data:
+2. Test on Sample Data:
 python UI_testing_with_model.py
 ```
 
