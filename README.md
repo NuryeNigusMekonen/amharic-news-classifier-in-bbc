@@ -84,7 +84,7 @@ Nurye Nigus Mekonen
 Feel free to comment on my repo or contribute by opening issues or pull requests!
 
 ```
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
 
