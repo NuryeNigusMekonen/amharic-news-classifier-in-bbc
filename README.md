@@ -45,17 +45,17 @@ amharic-news-classifier-in-bbc/
 
 ## 📈 Performance Results
 
-### ✅ Overall Accuracy
+## ✅ Overall Accuracy
 
-![Accuracy](plots/accuracy_bar.png)
+![Accuracy](figures/accuracy_bar.png)
 
-### 📊 Class-wise Metrics
+## 📊 Class-wise Metrics
 
-![Class Metrics](plots/classwise_metrics.png)
+![Class Metrics](figures/classwise_metrics.png)
 
-### 🧩 Confusion Matrix
+## 🧩 Confusion Matrix
 
-![Confusion Matrix](plots/confusion_matrix.png)
+![Confusion Matrix](figures/confusion_matrix.png)
 
 ```
 ## 📦 Installation
@@ -116,7 +116,7 @@ python visualize_using_graph.py
 
 * **Nurye Nigus Mekonen**
 
-Feel free to ⭐ the repo or contribute by opening issues or pull requests!
+Feel free to comment on the repo or contribute by opening issues or pull requests!
 
 ---
 
