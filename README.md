@@ -83,7 +83,7 @@ python UI_testing_with_model.py
 <img src="figures/UI_for_input.png" width="500" height="300" />
 
 2. PREDICTION RESULT  
-<img src="figures/prediction_result.png" width="500" height="300" />
+<img src="figures/pediction_result.png" width="500" height="300" />
 
 
 ##  Author
