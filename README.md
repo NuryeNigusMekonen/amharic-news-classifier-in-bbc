@@ -1,14 +1,10 @@
 
 # Amharic News Classifier - BBC Dataset
 ```
-This project is a machine learning-based text classifier that categorizes Amharic news articles into four distinct categories: **Health**, **Politics**, **Sport**, and **Technology**. The classifier is trained using an enhanced dataset sourced from BBC Amharic news, with 250 labeled articles per category.
-```
-## 📊 Project Highlights
-```
-- **Language**: Amharic 🇪🇹
-- **Dataset**: 1000 labeled news articles (250 per category)
-- **Model**: Logistic Regression (with TF-IDF vectorization)
-- **Performance**: High precision, recall, and F1-score across all categories
+This project is a machine learning-based text classifier that categorizes Amharic news articles into four distinct categories: 
+**Health**, **Politics**, **Sport**, and **Technology**. The classifier is trained using an enhanced dataset sourced from BBC Amharic news, with 250 labeled articles per category.
+
+project is requested by HILCOE school NLP subject.
 ```
 ## 🚀 Features
 ```
@@ -16,30 +12,28 @@ This project is a machine learning-based text classifier that categorizes Amhari
 - Enhanced with an expanded dataset for better generalization.
 - Evaluation using accuracy, precision, recall, F1-score, and confusion matrix.
 - Visual performance metrics included.
-
 ```
-
 ## 📁 Project Structure
-
 ```
-
-amharic-news-classifier-in-bbc/
-│
-├── classifier.py                  # Main model training script
-├── testing\_with\_sample\_data.py   # Script for testing model on sample data
-├── visualize\_using\_graph.py      # Visualization of results
-├── tfidf\_vectorizer\_300+.pkl     # Saved TF-IDF vectorizer
-├── requirements.txt              # Python dependencies
-├── README.md                     # Project documentation
-│
+NLP/
 ├── data/
-│   └── bbc\_amharic\_dataset\_300+.csv  # Labeled dataset (1000 samples)
-│
-├── graphs/
-│   ├── accuracy\_bar.png              # Overall accuracy chart
-│   ├── classwise\_metrics.png        # Precision/Recall/F1 by class
-│   └── confusion\_matrix.png         # Confusion matrix heatmap
-
+│   └── bbc_amharic_dataset_300+.csv     ← Cleaned dataset
+├── models/
+│   ├── amharic_news_classifier_300+.pkl ← Trained Logistic Regression model
+│   └── tfidf_vectorizer_300+.pkl        ← TF-IDF vectorizer used for text features
+├── figures/
+│   ├── accuracy_bar.png                 ← Bar chart of overall accuracy
+│   ├── classwise_metrics.png            ← Precision, Recall, F1 per class
+│   └── confusion_matrix.png             ← Heatmap of classification errors
+├── scripts/
+│   ├── classifier.py                    ← Trains model and generates visual metrics
+│   ├── import_requests_for_more_than_300_articles.py ← Scrapes BBC Amharic site
+│   └── UI_testing_with_model.py         ← Predicts category using saved model
+├── docs/
+│   └── NLP_Projects_Guide.pdf           ← Project guide or instructions
+├── requirements.txt                     ← Python dependencies
+├── LICENSE                              ← License info
+└── README.md                            ← You’re here!
 ```
 ---
 
@@ -56,53 +50,29 @@ amharic-news-classifier-in-bbc/
 ## 🧩 Confusion Matrix
 
 ![Confusion Matrix](figures/confusion_matrix.png)
-
 ```
 ## 📦 Installation
-
 1. Clone the repository:
-
-```bash
+```
 git clone https://github.com/NuryeNigusMekonen/amharic-news-classifier-in-bbc.git
 cd amharic-news-classifier-in-bbc
 ````
-
-2. Create a virtual environment (optional but recommended):
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
 3. Install dependencies:
-
-```bash
+```
 pip install -r requirements.txt
 ```
-
----
 
 ## 🛠️ How to Run
 
 ### Train the Classifier:
-
 ```bash
 python classifier.py
 ```
-
 ### Test on Sample Data:
-
 ```bash
-python testing_with_sample_data.py
+python UI_testing_with_model.py
 ```
 
-### Visualize Results:
-
-```bash
-python visualize_using_graph.py
-```
-
----
 
 ## 🧠 Model Details
 
@@ -116,11 +86,11 @@ python visualize_using_graph.py
 
 * **Nurye Nigus Mekonen**
 
-Feel free to comment on the repo or contribute by opening issues or pull requests!
+Feel free to comment on my repo or contribute by opening issues or pull requests!
 
----
 
 ## 📄 License
 
 This project is licensed under the MIT License.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
