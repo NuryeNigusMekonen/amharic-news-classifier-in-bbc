@@ -1,116 +1,126 @@
-# 📰 Amharic News Classifier 
 
-This project uses Logistic Regression to classify Amharic news headlines into one of four categories:  
-**Politics**, **Health**, **Sport**, or **Technology**.
-
-It demonstrates an end-to-end machine learning workflow in a low-resource language using real-world data scraped from **BBC Amharic**.
-
-
-Features
-
--  Balanced Amharic news dataset (400+ headlines)
--  Text preprocessing and normalization
--  TF-IDF vectorization with bigrams
--  Logistic Regression model
--  Precision, Recall, F1-score, and Confusion Matrix
--  Graphical evaluation with Matplotlib and Seaborn
--  Model and vectorizer saving with `joblib`
-
----
-'''
-## 📁 Folder Structure
+# Amharic News Classifier - BBC Dataset
+```
+This project is a machine learning-based text classifier that categorizes Amharic news articles into four distinct categories: **Health**, **Politics**, **Sport**, and **Technology**. The classifier is trained using an enhanced dataset sourced from BBC Amharic news, with 250 labeled articles per category.
+```
+## 📊 Project Highlights
+```
+- **Language**: Amharic 🇪🇹
+- **Dataset**: 1000 labeled news articles (250 per category)
+- **Model**: Logistic Regression (with TF-IDF vectorization)
+- **Performance**: High precision, recall, and F1-score across all categories
+```
+## 🚀 Features
+```
+- Classifies Amharic news articles into 4 categories.
+- Enhanced with an expanded dataset for better generalization.
+- Evaluation using accuracy, precision, recall, F1-score, and confusion matrix.
+- Visual performance metrics included.
 
 ```
-amharic-news-classifier/
+
+## 📁 Project Structure
+
+```
+
+amharic-news-classifier-in-bbc/
+│
+├── classifier.py                  # Main model training script
+├── testing\_with\_sample\_data.py   # Script for testing model on sample data
+├── visualize\_using\_graph.py      # Visualization of results
+├── tfidf\_vectorizer\_300+.pkl     # Saved TF-IDF vectorizer
+├── requirements.txt              # Python dependencies
+├── README.md                     # Project documentation
 │
 ├── data/
-│   └── bbc_amharic_dataset_300+.csv
+│   └── bbc\_amharic\_dataset\_300+.csv  # Labeled dataset (1000 samples)
 │
-├── models/
-│   ├── amharic_news_classifier_300+.pkl
-│   └── tfidf_vectorizer_300+.pkl
-│
-├── scripts/
-│   ├── classifier.py
-│   ├── UI_testing_with_sample_data.py
-│   ├── import_requests_for_for moth than 300 articles.py
-│
-│
-├── figures/
-│   ├── accuracy_score_overal.png
-│   ├── confusion_matrix.png
-│   └── classwise_matics.png
-│
-├── docs/
-│   └── NLP_Projects_Guide.pdf
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+├── graphs/
+│   ├── accuracy\_bar.png              # Overall accuracy chart
+│   ├── classwise\_metrics.png        # Precision/Recall/F1 by class
+│   └── confusion\_matrix.png         # Confusion matrix heatmap
+
 ```
+---
 
-Sample Evaluation
+## 📈 Performance Results
 
-Overall Accuracy: `56.67%`
+### ✅ Overall Accuracy
 
-| Class       | Precision | Recall | F1-Score |
-|-------------|-----------|--------|----------|
-| Health      | 0.26      | 0.73   | 0.38     |
-| Politics    | 0.88      | 0.54   | 0.67     |
-| Sport       | 1.00      | 0.62   | 0.76     |
-| Technology  | 0.64      | 0.43   | 0.51     |
+![Accuracy](plots/accuracy_bar.png)
 
+### 📊 Class-wise Metrics
 
+![Class Metrics](plots/classwise_metrics.png)
 
-## Confusion Matrix
+### 🧩 Confusion Matrix
+
+![Confusion Matrix](plots/confusion_matrix.png)
+
 ```
+## 📦 Installation
 
-             Predicted
-            ┌──────────------------------------┐
-Actual      │ Health Poletics Sport Technology │
-┌───        ┼───────--------------------───────┤
-Health      │11      1        0     3          │
-Poletics    │11      15       0     2          │
-Sport       │10      0        16    0          │
-Technology  │11      1        0     9          │
-            ------------------------------------
-			
-```
-
-
- Installation & Usage
+1. Clone the repository:
 
 ```bash
-# 1. Clone this repository
-git clone https://github.com/your-username/amharic-news-classifier.git
-cd amharic-news-classifier
+git clone https://github.com/NuryeNigusMekonen/amharic-news-classifier-in-bbc.git
+cd amharic-news-classifier-in-bbc
+````
 
-# 2. Install dependencies
-pip install -r requirements.txt
+2. Create a virtual environment (optional but recommended):
 
-# 3. Visualize results
-python visualise_using_graph.py
-
-
-
----
-Future Improvements
-Collect more diverse and balanced data
-
-Integrate Amharic stopwords and stemming
-
-Replace TF-IDF with pretrained embeddings (e.g., fastText, BERT)
-
-Explore deep learning models (LSTM, transformer)
-
-
-👤 Author
-Nurye Nigus
-Electrical & Software Engineer
-📧 nurye.nigus.me@gmail.com
-🌐 LinkedIn (https://www.linkedin.com/in/nryngs/)
-🐙 GitHub: @NuryeNigusMekonen
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🛠️ How to Run
+
+### Train the Classifier:
+
+```bash
+python classifier.py
+```
+
+### Test on Sample Data:
+
+```bash
+python testing_with_sample_data.py
+```
+
+### Visualize Results:
+
+```bash
+python visualize_using_graph.py
+```
+
+---
+
+## 🧠 Model Details
+
+* **Vectorization**: TF-IDF
+* **Classifier**: Logistic Regression
+* **Evaluation Metrics**: Accuracy, Precision, Recall, F1-score
+
+---
+
+## ✍️ Author
+
+* **Nurye Nigus Mekonen**
+
+Feel free to ⭐ the repo or contribute by opening issues or pull requests!
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
 
