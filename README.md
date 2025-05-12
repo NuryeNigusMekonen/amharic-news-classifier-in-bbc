@@ -63,7 +63,9 @@ NLP/
 ```
 1. Clone the repository:
 
-git clone https://github.com/NuryeNigusMekonen/amharic-news-classifier-in-bbc.git
+A, git clone https://github.com/NuryeNigusMekonen/amharic-news-classifier-in-bbc.git  --- https
+B, git clone git@github.com:NuryeNigusMekonen/amharic-news-classifier-in-bbc.git      --- ssh
+
 cd amharic-news-classifier-in-bbc
 
 3. Install dependencies:
