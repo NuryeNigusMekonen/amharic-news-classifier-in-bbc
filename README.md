@@ -39,7 +39,7 @@ NLP/
             *.pkl      
     docs/
             NLP_Projects_Guide.pdf          
-
+    .gitignore
     requirements.txt                     
     LICENSE                              
     README.md                     
