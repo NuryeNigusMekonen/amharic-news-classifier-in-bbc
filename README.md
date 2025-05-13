@@ -16,7 +16,7 @@ project is requested by HILCOE school NLP subject.
 - Classifies Amharic news articles into 4 categories.
 - Enhanced with an expanded dataset for better generalization.
 - Evaluation using accuracy, precision, recall, F1-score, and confusion matrix.
-- Visual performance metrics included.
+
 ```
 ##  Project Structure
 ```
