@@ -33,7 +33,10 @@ NLP/
     scripts/
             classifier.py                    
             import_requests_for_more_than_300_articles.py 
-            UI_testing_with_model.py         
+            UI_testing_with_model.py
+    models/
+            *.pkl
+            *.pkl      
     docs/
             NLP_Projects_Guide.pdf          
 
