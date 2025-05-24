@@ -18,11 +18,10 @@ categories = {
     "Technology": "https://www.bbc.com/amharic/topics/c06gq8wx467t",
     "Sport": "https://www.bbc.com/amharic/topics/cdr56g2x71dt"
 }
-
 headers = {"User-Agent": "Mozilla/5.0"}
 data = []
 
-page_limit = 10  # Increase this to collect more
+page_limit = 20  # Increase this to collect more
 
 # === Start scraping ===
 for label, base_url in categories.items():
@@ -51,14 +50,11 @@ for label, base_url in categories.items():
                         "url": link
                     })
                     collected += 1
-
             print(f"   Page {page}: {collected} collected so far.")
             time.sleep(1)
-
         except Exception as e:
             print(f" Error on page {page} of {label}: {e}")
             continue
-
 # === Save to CSV ===
 print("\n Scraping complete. Total articles collected:", len(data))
 df = pd.DataFrame(data)
