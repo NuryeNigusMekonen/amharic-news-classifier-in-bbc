@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/nurye/Desktop/hilcoe/NLP-ASSGN/amharic-news-classifier-in-bbc/nlp_venv
+set -gx VIRTUAL_ENV /home/nurye/Desktop/10_Academy/my_projects/amharic-news-classifier-in-bbc/nlp_venv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

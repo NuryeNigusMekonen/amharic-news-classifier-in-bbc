@@ -1,4 +1,4 @@
-#!/home/nurye/Desktop/hilcoe/NLP-ASSGN/amharic-news-classifier-in-bbc/nlp_venv/bin/python3
+#!/home/nurye/Desktop/10_Academy/my_projects/amharic-news-classifier-in-bbc/nlp_venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
